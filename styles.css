@@ -1,0 +1,4 @@
+@import url("./app/globals.css");
+.hidden{display:none!important}
+.machine-card{background-image:linear-gradient(0deg,rgba(3,10,13,.86),rgba(3,10,13,.05) 65%),url('./industry-grid.png')}
+.image-panel{background-image:url('./industry-grid.png')}
