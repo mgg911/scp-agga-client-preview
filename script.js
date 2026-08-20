@@ -12,7 +12,7 @@ document.querySelector('#success-close').addEventListener('click',closeRequest);
 modal.addEventListener('mousedown',event=>event.target===modal&&closeRequest());
 document.addEventListener('keydown',event=>event.key==='Escape'&&closeRequest());
 document.querySelector('#request-form').addEventListener('submit',event=>{event.preventDefault();requestContent.classList.add('hidden');successContent.classList.remove('hidden')});
-document.querySelector('#search-form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#catalog').scrollIntoView({behavior:'smooth'})});
+document.querySelector('#search-form').addEventListener('submit',event=>{event.preventDefault();const query=document.querySelector('#catalog-search').value.trim();window.location.href=query?'catalog.html?q='+encodeURIComponent(query):'catalog.html'});
 document.querySelector('.menu-toggle').addEventListener('click',()=>{mobileMenu.classList.add('open');mobileMenu.setAttribute('aria-hidden','false')});
 document.querySelector('.mobile-menu-head button').addEventListener('click',()=>{mobileMenu.classList.remove('open');mobileMenu.setAttribute('aria-hidden','true')});
 document.querySelectorAll('.mobile-menu a').forEach(link=>link.addEventListener('click',()=>mobileMenu.classList.remove('open')));
