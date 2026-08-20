@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Каталог запчастей SCP-AGGA для строительной и дорожно-строительной техники.">
+  <title>Каталог запчастей — SCP-AGGA</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="catalog.css"><script src="catalog.js" defer></script>
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="nav container"><a href="index.html" class="brand"><img src="public/ref/xref-38.jpeg" alt="SCP-AGGA"></a><nav class="desktop-nav"><a href="index.html#quality">Контроль качества</a><a href="index.html#delivery">Поставка</a><a href="index.html#business">О компании</a><a href="index.html#contacts">Контакты</a></nav><button class="quote-list" id="open-list" type="button"><span class="list-icon">≡</span> СПИСОК ЗАПРОСА <b id="header-count">0</b></button><button class="menu-toggle" type="button" aria-label="Открыть меню"><span></span><span></span><span></span></button></div>
+    <div class="search-bar"><div class="search-inner container"><a class="btn btn-orange catalog-btn" href="catalog.html">КАТАЛОГ</a><form class="search" id="catalog-search-form"><label class="sr-only" for="catalog-search">Поиск по каталогу</label><span></span><input id="catalog-search" placeholder="Артикул, OEM-номер, название запчасти или модель техники"><button type="submit">→</button></form><button class="btn btn-orange add-list" id="header-request" type="button">ДОБАВИТЬ СПИСОК</button></div></div>
+    <div class="mobile-menu" aria-hidden="true"><div class="mobile-menu-head"><span>НАВИГАЦИЯ</span><button type="button">×</button></div><a href="catalog.html">КАТАЛОГ</a><a href="index.html#quality">КОНТРОЛЬ КАЧЕСТВА</a><a href="index.html#delivery">ПОСТАВКА</a><a href="index.html#business">О КОМПАНИИ</a><a href="index.html#contacts">КОНТАКТЫ</a><button class="btn btn-orange" id="mobile-request" type="button">ДОБАВИТЬ СПИСОК</button></div>
+  </header>
+
+  <main class="catalog-page">
+    <section class="catalog-title"><div class="container"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>→</span><span>Каталог</span></nav><div class="title-row"><div><p class="kicker">КАТАЛОГ SCP-AGGA</p><h1 id="page-title">ВСЕ ЗАПЧАСТИ</h1><p id="page-description">Подберите необходимые позиции по типу техники, категории или артикулу.</p></div><button class="btn btn-outline filter-open" type="button"><span>≡</span> ФИЛЬТРЫ <b id="mobile-filter-count">0</b></button></div></div></section>
+    <section class="catalog-body"><div class="container catalog-layout">
+      <aside class="filters" id="filters">
+        <div class="filters-head"><h2>ФИЛЬТРЫ</h2><button class="filters-close" type="button">×</button></div>
+        <button class="reset-filters" id="reset-filters" type="button">СБРОСИТЬ ВСЕ</button>
+        <fieldset><legend>ТИП ТЕХНИКИ <span>−</span></legend><label><input type="checkbox" name="type" value="road"><i></i> Дорожно-строительная <b>6</b></label><label><input type="checkbox" name="type" value="construction"><i></i> Строительная <b>5</b></label></fieldset>
+        <fieldset><legend>КАТЕГОРИЯ <span>−</span></legend><label><input type="checkbox" name="category" value="cutting"><i></i> Режущий инструмент <b>2</b></label><label><input type="checkbox" name="category" value="undercarriage"><i></i> Ходовая часть <b>3</b></label><label><input type="checkbox" name="category" value="conveyor"><i></i> Конвейерная система <b>2</b></label><label><input type="checkbox" name="category" value="hydraulics"><i></i> Гидравлика <b>1</b></label><label><input type="checkbox" name="category" value="service"><i></i> Фильтры и обслуживание <b>1</b></label></fieldset>
+        <fieldset><legend>МОДЕЛЬ ТЕХНИКИ <span>−</span></legend><label><input type="checkbox" name="model" value="milling"><i></i> Дорожная фреза <b>4</b></label><label><input type="checkbox" name="model" value="paver"><i></i> Асфальтоукладчик <b>3</b></label><label><input type="checkbox" name="model" value="roller"><i></i> Каток <b>2</b></label><label><input type="checkbox" name="model" value="excavator"><i></i> Экскаватор <b>3</b></label></fieldset>
+        <button class="btn btn-orange apply-mobile" type="button">ПОКАЗАТЬ РЕЗУЛЬТАТЫ</button>
+        <div class="filter-help"><h3>НЕ НАШЛИ НУЖНУЮ ДЕТАЛЬ?</h3><p>Отправьте артикул, фото или данные техники — поможем с подбором.</p><button type="button" id="filter-request">ОТПРАВИТЬ ЗАПРОС →</button></div>
+      </aside>
+      <div class="results">
+        <div class="results-toolbar"><p><b id="result-count">9</b> ПОЗИЦИЙ</p><div><label for="sort">СОРТИРОВКА</label><select id="sort"><option value="recommended">По релевантности</option><option value="name">По названию</option><option value="article">По артикулу</option></select><button class="view-button active" type="button" data-view="grid" aria-label="Сетка">▦</button><button class="view-button" type="button" data-view="list" aria-label="Список">☷</button></div></div>
+        <div class="active-filters" id="active-filters"></div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state hidden" id="empty-state"><span>⌕</span><h2>НИЧЕГО НЕ НАЙДЕНО</h2><p>Попробуйте изменить запрос или сбросить выбранные фильтры.</p><button class="btn btn-orange" id="empty-reset" type="button">СБРОСИТЬ ФИЛЬТРЫ</button></div>
+      </div>
+    </div></section>
+    <section class="catalog-cta"><div class="container"><div><p class="kicker kicker-light">ГОТОВЫЙ ПЕРЕЧЕНЬ</p><h2>ЕСТЬ СПИСОК ЗАПЧАСТЕЙ?</h2><p>Добавьте артикулы, количество и данные техники. Проверим запрос и подготовим коммерческое предложение.</p></div><button class="btn btn-orange" id="catalog-request" type="button">ДОБАВИТЬ СПИСОК</button></div></section>
+  </main>
+
+  <footer id="contacts"><div class="container footer-grid"><div class="footer-brand"><img src="public/ref/xref-38.jpeg" alt="SCP-AGGA"><p>Поставщик запчастей SCP-AGGA для строительной и дорожно-строительной техники в России.</p><span>Телефон / Email</span><span>Telegram / MAX</span></div><div><h3>КАТАЛОГ</h3><a href="catalog.html">Все запчасти</a><a href="catalog.html?type=construction">Строительная техника</a><a href="catalog.html?type=road">Дорожно-строительная техника</a></div><div><h3>ПОКУПАТЕЛЯМ</h3><button type="button" class="footer-request">Получить предложение</button><button type="button" id="footer-list">Список запроса</button><a href="index.html#delivery">Поставка</a><a href="#contacts">Гарантия</a></div><div><h3>КОМПАНИЯ</h3><a href="index.html#business">О компании</a><a href="index.html#quality">Контроль качества</a><a href="#contacts">Контакты</a></div></div><div class="container footer-bottom"><span>© АНН ГРУПП. Все права защищены.</span><div><a href="#contacts">Политика конфиденциальности</a><a href="#contacts">Пользовательское соглашение</a><a href="#contacts">Условия гарантии</a><a href="#contacts">Реквизиты</a></div></div></footer>
+
+  <div class="request-drawer hidden" id="request-drawer"><div class="drawer-shade"></div><aside><button class="drawer-close" type="button">×</button><p class="kicker">СПИСОК ЗАПРОСА</p><h2 id="drawer-title">ВАШ СПИСОК</h2><div id="drawer-items"></div><form id="request-form"><input required placeholder="Ваше имя" aria-label="Ваше имя"><input required placeholder="Телефон или мессенджер" aria-label="Телефон или мессенджер"><input type="email" required placeholder="Электронная почта" aria-label="Электронная почта"><textarea rows="3" placeholder="Дополнительная информация" aria-label="Дополнительная информация"></textarea><button class="btn btn-orange" type="submit">ОТПРАВИТЬ ЗАПРОС</button><small>Отправляя форму, вы соглашаетесь с Политикой конфиденциальности.</small></form><div class="drawer-success hidden"><span>✓</span><h2>ЗАПРОС ПОЛУЧЕН</h2><p>Специалист проверит информацию и свяжется с вами.</p></div></aside></div>
+</body>
+</html>
