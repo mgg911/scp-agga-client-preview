@@ -20,14 +20,14 @@
     </div>
     <div class="search-bar">
       <div class="search-inner container">
-        <a class="btn btn-orange catalog-btn" href="#catalog">КАТАЛОГ</a>
+        <a class="btn btn-orange catalog-btn" href="catalog.html">КАТАЛОГ</a>
         <form class="search" id="search-form" role="search"><label class="sr-only" for="catalog-search">Поиск по каталогу</label><span aria-hidden="true"></span><input id="catalog-search" placeholder="Артикул, OEM-номер, название запчасти или модель техники"><button type="submit" aria-label="Найти">→</button></form>
         <button class="btn btn-orange add-list" type="button" data-request>ДОБАВИТЬ СПИСОК</button>
       </div>
     </div>
     <div class="mobile-menu" aria-hidden="true">
       <div class="mobile-menu-head"><span>НАВИГАЦИЯ</span><button type="button" aria-label="Закрыть меню">×</button></div>
-      <a href="#catalog">КАТАЛОГ</a><a href="#quality">КОНТРОЛЬ КАЧЕСТВА</a><a href="#delivery">ПОСТАВКА</a><a href="#business">О КОМПАНИИ</a><a href="#contacts">КОНТАКТЫ</a>
+      <a href="catalog.html">КАТАЛОГ</a><a href="#quality">КОНТРОЛЬ КАЧЕСТВА</a><a href="#delivery">ПОСТАВКА</a><a href="#business">О КОМПАНИИ</a><a href="#contacts">КОНТАКТЫ</a>
       <button class="btn btn-orange" type="button" data-request>ДОБАВИТЬ СПИСОК</button>
     </div>
   </header>
@@ -51,10 +51,10 @@
 
     <section class="equipment section-soft" id="catalog">
       <div class="container">
-        <div class="section-head"><div><p class="kicker">КАТАЛОГ ПРОДУКЦИИ</p><h2>ЗАПЧАСТИ ПО ТИПУ ТЕХНИКИ</h2></div><a class="orange-link" href="#catalog">ВСЕ ЗАПЧАСТИ <span>→</span></a></div>
+        <div class="section-head"><div><p class="kicker">КАТАЛОГ ПРОДУКЦИИ</p><h2>ЗАПЧАСТИ ПО ТИПУ ТЕХНИКИ</h2></div><a class="orange-link" href="catalog.html">ВСЕ ЗАПЧАСТИ <span>→</span></a></div>
         <div class="equipment-grid">
-          <a class="equipment-card" href="#catalog"><img src="public/ref/xref-28.jpeg" alt="Экскаватор и бульдозер"><div><h3>СТРОИТЕЛЬНАЯ ТЕХНИКА</h3><span>СМОТРЕТЬ ЗАПЧАСТИ&nbsp;&nbsp; →</span></div></a>
-          <a class="equipment-card" href="#catalog"><img src="public/ref/xref-42.jpeg" alt="Дорожная фреза, асфальтоукладчик и каток"><div><h3>ДОРОЖНО-СТРОИТЕЛЬНАЯ ТЕХНИКА</h3><span>СМОТРЕТЬ ЗАПЧАСТИ&nbsp;&nbsp; →</span></div></a>
+          <a class="equipment-card" href="catalog.html?type=construction"><img src="public/ref/xref-28.jpeg" alt="Экскаватор и бульдозер"><div><h3>СТРОИТЕЛЬНАЯ ТЕХНИКА</h3><span>СМОТРЕТЬ ЗАПЧАСТИ&nbsp;&nbsp; →</span></div></a>
+          <a class="equipment-card" href="catalog.html?type=road"><img src="public/ref/xref-42.jpeg" alt="Дорожная фреза, асфальтоукладчик и каток"><div><h3>ДОРОЖНО-СТРОИТЕЛЬНАЯ ТЕХНИКА</h3><span>СМОТРЕТЬ ЗАПЧАСТИ&nbsp;&nbsp; →</span></div></a>
         </div>
       </div>
     </section>
@@ -89,13 +89,13 @@
       <div class="container business-grid"><img src="public/ref/xref-12.jpeg" alt="Менеджеры работают с перечнем и образцом детали"><div class="business-copy"><p class="kicker">ДЛЯ БИЗНЕСА</p><h2>ПОСТАВКИ ЗАПЧАСТЕЙ<br><span>ДЛЯ БИЗНЕСА</span></h2><p>Работаем с владельцами техники, сервисными компаниями, продавцами запчастей и отделами снабжения. Подбираем отдельные позиции и комплектуем заявки по перечню.</p><button class="btn btn-orange" type="button" data-request>ОБСУДИТЬ ПОСТАВКУ</button></div></div>
     </section>
 
-    <section class="final-cta section-white"><div class="container final-inner"><p class="kicker">ОТПРАВЬТЕ ЗАПРОС</p><h2>НАЙДЁМ НУЖНЫЕ<br><span>ЗАПЧАСТИ</span></h2><p>Отправьте артикулы, данные техники или готовый перечень. Проверим запрос и подготовим коммерческое предложение.</p><div><button class="btn btn-orange" type="button" data-request>ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button><a class="btn btn-outline" href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a></div></div></section>
+    <section class="final-cta section-white"><div class="container final-inner"><p class="kicker">ОТПРАВЬТЕ ЗАПРОС</p><h2>НАЙДЁМ НУЖНЫЕ<br><span>ЗАПЧАСТИ</span></h2><p>Отправьте артикулы, данные техники или готовый перечень. Проверим запрос и подготовим коммерческое предложение.</p><div><button class="btn btn-orange" type="button" data-request>ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button><a class="btn btn-outline" href="catalog.html">ПЕРЕЙТИ В КАТАЛОГ</a></div></div></section>
   </main>
 
   <footer id="contacts">
     <div class="container footer-grid">
       <div class="footer-brand"><img src="public/ref/xref-38.jpeg" alt="SCP-AGGA"><p>Поставщик запчастей SCP-AGGA для строительной и дорожно-строительной техники в России.</p><span>Телефон / Email</span><span>Telegram / MAX</span></div>
-      <div><h3>КАТАЛОГ</h3><a href="#catalog">Все запчасти</a><a href="#catalog">Строительная техника</a><a href="#catalog">Дорожно-строительная техника</a></div>
+      <div><h3>КАТАЛОГ</h3><a href="catalog.html">Все запчасти</a><a href="catalog.html?type=construction">Строительная техника</a><a href="catalog.html?type=road">Дорожно-строительная техника</a></div>
       <div><h3>ПОКУПАТЕЛЯМ</h3><button type="button" data-request>Получить предложение</button><button type="button" data-request>Список запроса</button><a href="#delivery">Поставка</a><a href="#contacts">Гарантия</a></div>
       <div><h3>КОМПАНИЯ</h3><a href="#business">О компании</a><a href="#quality">Контроль качества</a><a href="#contacts">Контакты</a></div>
     </div>
